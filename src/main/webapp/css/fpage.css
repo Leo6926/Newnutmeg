@@ -1,0 +1,156 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Poppins', sans-serif;
+}
+
+/*後台*/
+h2{
+	font-size:10em;
+	color:#fff;
+	/*字體大寫*/
+	text-transform:uppercase;
+	/*置中*/
+	text-align:center;
+	display:flex;
+}
+h2 span{
+	/*允許元素在指定的持續時間內更改值*/
+	transition:1.5s;
+	
+}
+h2:hover span{
+	filter:blur(20px);
+	opacity:0;
+	transform:scale(2);	
+}
+h2 span:nth-child(10n+1){
+	transition-delay:0s;
+	
+}
+h2 span:nth-child(10n+2){
+	transition-delay:0.1s;
+	
+}
+h2 span:nth-child(10n+3){
+	transition-delay:0.2s;
+	
+}
+h2 span:nth-child(10n+4){
+	transition-delay:0.3s;
+	
+}
+h2 span:nth-child(10n+5){
+	transition-delay:0.4s;
+	
+}
+h2 span:nth-child(10n+6){
+	transition-delay:0.5s;
+	
+}
+h2 span:nth-child(10n+7){
+	transition-delay:0.6s;
+	
+}
+h2 span:nth-child(10n+8){
+	transition-delay:0.7s;
+	
+}
+h2 span:nth-child(10n+9){
+	transition-delay:0.8s;
+	
+}
+h2 span:nth-child(10n+10){
+	transition-delay:0.9s;
+	
+}
+
+/*前導頁*/
+section{
+	position: relative;
+	width:100%;
+	height:100vh;
+	display:flex;
+	/*置中排列*/
+	justify-content:center;
+	/*元素在側軸居中。如果元素在側軸上的高度高度其容器，那麼在兩個上溢出距離相同。*/
+	align-items:center;
+	/*超出範圍隱藏*/
+	overflow:hidden;
+}
+/*左側動圖*/
+.scene{
+	position:reative;
+	overflow-x:hidden;
+	height:100vh;
+}
+
+.bg
+{
+	position:absolute;
+	bottom:10;
+	width: 100%;
+	height: 700px;
+	background: url(../images/ph-vector.jpg);	
+	animation: animateBg 25s linear infinite;
+	background-size:1600px;
+	background-repeat:repeat-x;
+}
+
+/*可以控制動畫序列的中間步驟*/
+@keyframes animateBg{
+	0%
+	{
+		background-position-x:0px;
+	}
+	90%,100%
+	{
+		background-position-x:1600px;
+	}
+}
+
+.shopping_cart1
+{
+	position:absolute;
+	left:-200px;
+	bottom: -10px;
+	max-width:200px;
+	z-index:10;
+	animation:shopping_cart1 13s linear infinite;
+}
+
+@keyframes shopping_cart1{
+	0%
+	{
+		transform: translateX(0px);
+	}
+	90%,100%
+	{
+		transform: translateX(calc(100vw + 200px));
+	}
+}
+
+.shopping_cart2
+{
+	position:absolute;
+	right:-200px;
+	bottom: 10px;
+	max-width:200px;
+	z-index:9;
+	animation:shopping_cart2 12s linear infinite;
+}
+
+@keyframes shopping_cart2{
+	0%
+	{
+		transform: translateX(0px) rotateY(180deg);
+	}
+	90%,100%
+	{
+		transform: translateX(calc(-100vw - 200px)) rotateY(180deg);
+	}
+}
+
+
+	

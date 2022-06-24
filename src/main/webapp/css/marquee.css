@@ -1,0 +1,38 @@
+.marqee {
+ height: 1.5em;
+ margin: 0 auto;
+ overflow: hidden; 
+ position: relative;
+ 
+}
+
+.marqee > ul {
+ padding-left: 0;
+ display: flex;
+ list-style-type: none;
+ animation: marqee 15s linear infinite;
+ position: absolute;
+}
+
+.marqee > ul > li {
+ white-space: nowrap;
+ margin-right:1em;
+
+ font-weight: bold;
+
+}
+.marqee :hover{
+	animation-play-state: paused;
+}
+
+@keyframes marqee {
+ 0% {
+  left: 100%;
+  transform: translateX(0%);
+ }
+
+ 100% {
+  left: 0;
+  transform: translateX(-100%);
+ }
+}

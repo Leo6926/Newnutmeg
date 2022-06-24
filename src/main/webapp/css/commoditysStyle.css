@@ -1,0 +1,24 @@
+.cTitleTd{
+    height: 50px;
+	font-size: 30px;
+}
+
+.cIntroduceTd{
+    height: 230px;
+	font-size: 18px;
+}
+
+.cSalePriceTd{
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.salePrice{
+    font-size: 36px;
+    color: red;
+}
+
+.dCheadline{
+    font-size: 20px;
+}

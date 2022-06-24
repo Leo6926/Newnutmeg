@@ -1,0 +1,93 @@
+
+*{
+    border-collapse: collapse;
+}
+
+
+
+tr{
+    border: 1px black solid;
+}
+
+a{
+	color: black;
+	/* text-decoration -> 底線、刪除線 */
+    text-decoration: none;
+}
+
+.aboutPImgTd{
+    width: 600px;
+    height: 450px;
+}
+
+.aboutPTitleTd{
+    width: 660px;
+    height: 50px;
+    color: #2d862d;
+    font-weight:bold;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.aboutPContentTd{
+    width: 660px;
+    vertical-align: text-top;
+    padding-top: 13px;
+    font-size: 18px;
+    /* letter-spacing -> 字距 */
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.aboutPArrowTd{
+    width: 25px;
+}
+
+.aboutUsTitle{
+    font-size: 32px;
+    font-weight:bold;
+}
+
+
+.aboutPLeftTurn{
+	width: 25px;
+	height: 50px;
+	transform: rotate(180deg);
+}
+
+.aboutPRightTurn{
+	width: 25px;
+	height: 50px;
+}
+
+.aboutPImg{
+	width: 550px;
+    height: 410px;
+}
+
+.titleHr{
+    border: 5px solid #2d862d; 
+}
+
+.aboutPTitle{
+    font-size: 36px;
+    font-weight: bold;
+    color: #2d862d;
+}
+
+.titleImg{
+    width: 25%;
+}
+
+.aboutPTitle{
+    color: #2d862d;
+    font-size: 32px;
+}
+
+.aboutPContent{
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+

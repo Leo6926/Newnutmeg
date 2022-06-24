@@ -1,0 +1,199 @@
+@charset "UTF-8";
+.btnBlue {
+  border-radius: 100px;
+  padding: 5px 5px;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(0, 128, 0);
+  color: #ffffff;
+  letter-spacing: 3px;
+  border: none;
+}
+.btnBlue:hover {
+  background-color: rgb(0, 128, 64);
+  color: #ffffff;
+}
+
+.btnBoredBlue {
+  border-radius: 100px;
+  padding: 5px 5px;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #025A78;
+  background-color: #ffffff;
+  color: #025A78;
+}
+.btnBoredBlue:hover {
+  color: #0380aa;
+  border: 1px solid #0380aa;
+}
+
+.btnYellow {
+  border-radius: 100px;
+  padding: 5px 5px;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #FFF3A9;
+  color: #777777;
+  border: none;
+}
+.btnYellow:hover {
+  background-color: #fffadc;
+  color: #c4c4c4;
+}
+
+.btnWhite {
+  border-radius: 100px;
+  padding: 5px 5px;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #777777;
+  border: 1px solid #025A78;
+}
+.btnWhite:hover {
+  color: #c4c4c4;
+}
+
+.pageBtn {
+  border-radius: 10px;
+  border: 1px solid #5F8B94;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.pageBtn:hover {
+  border: 1px solid #777777;
+  color: #777777;
+}
+
+.noBtn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  border: 1px solid #5F8B94;
+  background-color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+.noBtn:hover {
+  border: 1px solid #777777;
+  color: #777777;
+}
+
+.btn {
+  padding: 5px 5px;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF3A9;
+}
+html body,
+body body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+main {
+  width: 90%;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+
+
+main #link {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+main #link .front a,
+main #link .back a {
+  color: #025A78;
+}
+main #link .front a:hover,
+main #link .back a:hover {
+  color: #79deff;
+}
+main #link .front a .gooey,
+main #link .back a .gooey {
+  background-image: linear-gradient(120deg, #edcfe4 0%, #ebd8f3 100%);
+  border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+  width: 250px;
+  height: 250px;
+   position: relative;
+  left:0;
+  top: 40%;
+  -webkit-animation: morph 3s linear infinite;
+  animation: morph 3s linear infinite;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  will-change: border-radius;
+  ;
+}
+main #link .front a .gooey::before, main #link .front a .gooey::after,
+main #link .back a .gooey::before,
+main #link .back a .gooey::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left:0;
+  top: 0;
+  border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+  box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.2);
+  will-change: border-radius, transform, opacity;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+  background-image: linear-gradient(120deg, #1f90b6 0%, rgba(244, 246, 248, 0.89) 100%);
+}
+main #link .front a .gooey::before,
+main #link .back a .gooey::before {
+  animation: morph 3s linear infinite;
+  opacity: 0.21;
+  animation-duration: 1.5s;
+}
+main #link .front a .frontfont::after,
+main #link .back a .frontfont::after {
+  animation: morph 3s linear infinite;
+  animation-delay: 400ms;
+  opacity: 0.89;
+  content: "前台";
+  line-height: 265px;
+}
+main #link .front a .backfont::after,
+main #link .back a .backfont::after {
+  animation: morph 3s linear infinite;
+  animation-delay: 400ms;
+  opacity: 0.89;
+  content: "後台";
+  line-height: 265px;
+}
+
